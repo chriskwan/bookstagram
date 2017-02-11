@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import BookTile from './BookTile'
 
-class BookFeed extends Component {
-    constructor() {
-        super();
-    }
-    
+class BookFeed extends Component {    
     render() {
         const books = this.props.books.map(book => {
             return (

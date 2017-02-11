@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import BookFeed from './BookFeed'
+import BookDetails from './BookDetails';
+import BookFeed from './BookFeed';
 
 class App extends Component {
   constructor() {
@@ -24,6 +25,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <BookFeed books={this.state.books}/>
+        <BookDetails />
       </div>
     );
   }
