@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import placeholderImage from './cat_reading.jpg';
 
 class BookTile extends Component {
     render() {
         return (
             <div className="BookTile">
-                <img src={require('./cat_reading.jpg')} className="BookTileImage" />
+                <img src={placeholderImage} className="BookTileImage" />
                 Hey I'm a book with title: { this.props.title }!
             </div>
         );
