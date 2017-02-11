@@ -19,6 +19,8 @@ class ButtonBar extends Component {
             selectedIndex: 0,
             showStayTunedMessage: false
         };
+
+        this.handleStayTunedMessageClose = this.handleStayTunedMessageClose.bind(this);
     }
 
     handlePostClick(e) {
@@ -72,6 +74,7 @@ class ButtonBar extends Component {
                 <Snackbar
                     open={this.state.showStayTunedMessage}
                     message="Coming soon!"
+                    onRequestClose={this.handleStayTunedMessageClose}
                 />
             </Paper>
         );
