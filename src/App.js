@@ -18,7 +18,8 @@ class App extends Component {
     this.state = {
       user: "Chris",
       books: [{ title: "A" }, { title: "B" }, { title: "C" }],
-      currentAppState: this.appStates.feed
+      currentAppState: this.appStates.feed,
+      currentBook: null
     }
 
     this.handleChangeToFeed = this.handleChangeToFeed.bind(this);
@@ -33,9 +34,10 @@ class App extends Component {
     });
   }
 
-  handleChangeToDetails() {
+  handleChangeToDetails(book) {
     this.setState({
-      currentAppState: this.appStates.details
+      currentAppState: this.appStates.details,
+      currentBook: book
     });
   }
 
@@ -54,7 +56,7 @@ class App extends Component {
         currentView = <BookFeed books={this.state.books} onBookTileClicked={this.handleChangeToDetails} />;
         break;
       case this.appStates.details:
-        currentView = <BookDetails />;
+        currentView = <BookDetails book={this.state.currentBook}/>;
         break;
       case this.appStates.profile:
         currentView = <UserProfile />;

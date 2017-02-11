@@ -4,8 +4,8 @@ class BookDetails extends Component {
     render() {
         return (
             <div>
-                Book Details!
-                This must be a good book!
+                Book Details
+                Title: {this.props.book.title}
             </div>
         );
     }

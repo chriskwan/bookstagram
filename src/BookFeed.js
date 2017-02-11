@@ -8,16 +8,18 @@ class BookFeed extends Component {
         this.onBookClickHandler = this.onBookClickHandler.bind(this);
     }
 
-    onBookClickHandler(e, message) {
-        e.preventDefault();
-        this.props.onBookTileClicked();
+    onBookClickHandler(book) {
+        this.props.onBookTileClicked(book);
     }
 
     render() {
         const books = this.props.books.map(book => {
             return (
                 <li key={book.title}>
-                    <BookTile title={book.title} onBookClick={this.onBookClickHandler}/> 
+                    <BookTile book={book} onBookClick={(e) => {
+                        e.preventDefault();
+                        this.onBookClickHandler(book);
+                    }}/> 
                 </li>
             );
         });
