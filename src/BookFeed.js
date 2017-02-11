@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { List, ListItem } from 'material-ui/List';
 import BookTile from './BookTile'
 
 class BookFeed extends Component {
@@ -15,20 +16,20 @@ class BookFeed extends Component {
     render() {
         const bookTiles = this.props.books.map(book => {
             return (
-                <li key={book.title}>
+                <ListItem key={book.title}>
                     <BookTile book={book} onBookClick={(e) => {
                         e.preventDefault();
                         this.onBookClickHandler(book);
                     }}/> 
-                </li>
+                </ListItem>
             );
         });
 
         return (
             <div>
-                <ul>
+                <List>
                     {bookTiles}
-                </ul>
+                </List>
             </div>
         );
     }
