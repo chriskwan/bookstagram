@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import BookDetails from './BookDetails';
 import BookFeed from './BookFeed';
+import ButtonBar from './ButtonBar';
 import UserProfile from './UserProfile';
 
 class App extends Component {
@@ -47,17 +48,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>*/}
-
           { currentView }
-
-        <div>
-          <ul>
-            <li>Discover</li>
-            <li>Post</li>
-            <li>You</li>
-          </ul>
-        </div>
-
+          <ButtonBar />
       </div>
     );
   }
