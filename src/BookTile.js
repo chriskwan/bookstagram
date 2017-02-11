@@ -5,7 +5,7 @@ class BookTile extends Component {
     render() {
         return (
             <div className="BookTile">
-                <img src={placeholderImage} className="BookTileImage" />
+                <img src={placeholderImage} className="BookTileImage" alt="Book"/>
                 Hey I'm a book with title: { this.props.title }!
             </div>
         );
