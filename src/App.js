@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+
 import BookDetails from './BookDetails';
 import BookFeed from './BookFeed';
 import ButtonBar from './ButtonBar';
 import UserProfile from './UserProfile';
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import {RaisedButton} from 'material-ui';
+import { AppBar } from 'material-ui';
 
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
@@ -75,8 +77,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-            Bookstagram
-            <RaisedButton label="Hello World"/>
+            <AppBar title="Bookstagram"/>
             <ButtonBar 
               onChangeToFeed={this.handleChangeToFeed}
               onChangeToDetails={this.handleChangeToDetails}
