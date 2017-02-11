@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import BookTile from './BookTile'
 import logo from './logo.svg';
 import './App.css';
+import BookFeed from './BookFeed'
 
 class App extends Component {
   constructor() {
@@ -12,15 +12,7 @@ class App extends Component {
     }
   }
 
-  render() {
-    const books = this.state.books.map(book => {
-      return (
-          <li key={book.title}>
-            <BookTile title={book.title}/> 
-          </li>
-      );
-    });
-    
+  render() {    
     return (
       <div className="App">
         {this.state.user}
@@ -31,9 +23,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <ul>
-          {books}
-        </ul>
+        <BookFeed books={this.state.books}/>
       </div>
     );
   }
