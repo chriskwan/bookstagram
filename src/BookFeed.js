@@ -13,7 +13,7 @@ class BookFeed extends Component {
     }
 
     render() {
-        const books = this.props.books.map(book => {
+        const bookTiles = this.props.books.map(book => {
             return (
                 <li key={book.title}>
                     <BookTile book={book} onBookClick={(e) => {
@@ -26,9 +26,8 @@ class BookFeed extends Component {
 
         return (
             <div>
-                Book Feed
                 <ul>
-                    {books}
+                    {bookTiles}
                 </ul>
             </div>
         );

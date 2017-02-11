@@ -25,7 +25,6 @@ class App extends Component {
     };
 
     this.state = {
-      user: "Chris",
       books: [{ title: "A" }, { title: "B" }, { title: "C" }],
       currentAppState: this.appStates.feed,
       currentBook: null
@@ -83,7 +82,6 @@ class App extends Component {
               onChangeToDetails={this.handleChangeToDetails}
               onChangeToProfile={this.handleChangeToProfile}
             />
-            {this.state.user}
             { currentView }
         </div>
       </MuiThemeProvider>
