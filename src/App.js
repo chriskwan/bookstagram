@@ -33,8 +33,7 @@ class App extends Component {
     });
   }
 
-  handleChangeToDetails(e) {
-    e.preventDefault();
+  handleChangeToDetails() {
     this.setState({
       currentAppState: this.appStates.details
     });
@@ -52,7 +51,7 @@ class App extends Component {
     
     switch (this.state.currentAppState) {
       case this.appStates.feed:
-        currentView = <BookFeed books={this.state.books}/>;
+        currentView = <BookFeed books={this.state.books} onBookTileClicked={this.handleChangeToDetails} />;
         break;
       case this.appStates.details:
         currentView = <BookDetails />;

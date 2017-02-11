@@ -5,6 +5,7 @@ class BookDetails extends Component {
         return (
             <div>
                 Book Details!
+                This must be a good book!
             </div>
         );
     }
