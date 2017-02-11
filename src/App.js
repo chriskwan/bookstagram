@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import BookDetails from './BookDetails';
 import BookFeed from './BookFeed';
+import UserProfile from './UserProfile';
 
 class App extends Component {
   constructor() {
@@ -26,6 +27,7 @@ class App extends Component {
         </p>
         <BookFeed books={this.state.books}/>
         <BookDetails />
+        <UserProfile />
       </div>
     );
   }
