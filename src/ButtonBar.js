@@ -71,7 +71,7 @@ class ButtonBar extends Component {
                 </BottomNavigation>
                 <Snackbar
                     open={this.state.showStayTunedMessage}
-                    message="Stay tuned!"
+                    message="Coming soon!"
                 />
             </Paper>
         );
