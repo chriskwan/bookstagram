@@ -4,6 +4,13 @@ import BookDetails from './BookDetails';
 import BookFeed from './BookFeed';
 import ButtonBar from './ButtonBar';
 import UserProfile from './UserProfile';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import {RaisedButton} from 'material-ui';
+
+// Needed for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+injectTapEventPlugin();
 
 class App extends Component {
   constructor() {
@@ -66,16 +73,19 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
-        Bookstagram
-        <ButtonBar 
-          onChangeToFeed={this.handleChangeToFeed}
-          onChangeToDetails={this.handleChangeToDetails}
-          onChangeToProfile={this.handleChangeToProfile}
-        />
-        {this.state.user}
-        { currentView }
-      </div>
+      <MuiThemeProvider>
+        <div className="App">
+            Bookstagram
+            <RaisedButton label="Hello World"/>
+            <ButtonBar 
+              onChangeToFeed={this.handleChangeToFeed}
+              onChangeToDetails={this.handleChangeToDetails}
+              onChangeToProfile={this.handleChangeToProfile}
+            />
+            {this.state.user}
+            { currentView }
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
