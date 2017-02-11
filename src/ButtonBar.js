@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
 import Paper from 'material-ui/Paper';
 
-import Home from 'material-ui/svg-icons/action/home'
+import Snackbar from 'material-ui/Snackbar';
+import Home from 'material-ui/svg-icons/action/home';
 import InsertEmoticon from 'material-ui/svg-icons/editor/insert-emoticon';
 import ModeEdit from 'material-ui/svg-icons/editor/mode-edit';
 
@@ -15,19 +16,28 @@ class ButtonBar extends Component {
         super();
 
         this.state = {
-            selectedIndex: 0
+            selectedIndex: 0,
+            showStayTunedMessage: false
         };
     }
 
     handlePostClick(e) {
         e.preventDefault();
-        alert("Stay tuned!");
+        this.setState({
+            showStayTunedMessage: true
+        });
+    }
+
+    handleStayTunedMessageClose() {
+        this.setState({
+            showStayTunedMessage: false
+        })
     }
 
     selectButton(index) {
         this.setState({
             selectedIndex: index
-        })
+        });
     }
 
     render() {
@@ -59,6 +69,10 @@ class ButtonBar extends Component {
                         }}
                     />
                 </BottomNavigation>
+                <Snackbar
+                    open={this.state.showStayTunedMessage}
+                    message="Stay tuned!"
+                />
             </Paper>
         );
     }
