@@ -8,16 +8,43 @@ import UserProfile from './UserProfile';
 class App extends Component {
   constructor() {
     super();
+
     this.appStates = {
       feed: "FEED",
       details: "DETAILS",
       profile: "PROFILE"
     };
+
     this.state = {
       user: "Chris",
       books: [{ title: "A" }, { title: "B" }, { title: "C" }],
       currentAppState: this.appStates.feed
     }
+
+    this.handleChangeToFeed = this.handleChangeToFeed.bind(this);
+    this.handleChangeToDetails = this.handleChangeToDetails.bind(this);
+    this.handleChangeToProfile = this.handleChangeToProfile.bind(this);
+  }
+
+  handleChangeToFeed(e) {
+    e.preventDefault();
+    this.setState({
+      currentAppState: this.appStates.feed
+    });
+  }
+
+  handleChangeToDetails(e) {
+    e.preventDefault();
+    this.setState({
+      currentAppState: this.appStates.details
+    });
+  }
+
+  handleChangeToProfile(e) {
+    e.preventDefault();
+    this.setState({
+      currentAppState: this.appStates.profile
+    });
   }
 
   render() {    
@@ -39,9 +66,14 @@ class App extends Component {
 
     return (
       <div className="App">
+        Bookstagram
+        <ButtonBar 
+          onChangeToFeed={this.handleChangeToFeed}
+          onChangeToDetails={this.handleChangeToDetails}
+          onChangeToProfile={this.handleChangeToProfile}
+        />
         {this.state.user}
         { currentView }
-        <ButtonBar />
       </div>
     );
   }
