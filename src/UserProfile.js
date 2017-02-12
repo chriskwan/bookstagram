@@ -26,38 +26,39 @@ class UserProfile extends Component {
         const placeholderImageUrl = './cat_reading.jpg';
 
         const tilesData = [{
-            img: placeholderImageUrl,
-            title: 'Breakfast',
-            featured: true
+            img: "./breadweeatindreams.jpg",
+            //img: "./harrypotter.png",
+            // title: 'Breakfast',
+            // featured: true
         },
         {
-            img: placeholderImageUrl,
-            title: 'Tasty burger'
+            img: "./neverletmego.jpg",
+            // title: 'Tasty burger'
         },
         {
-            img: placeholderImageUrl,
-            title: 'Camera'
+            img: "./whiteteeth.png",
+            // title: 'Camera'
         },
         {
-            img: placeholderImageUrl,
-            title: 'Morning',
-            featured: true
+            img: "./eleanoreandpark.png",
+            // title: 'Morning',
+            // featured: true
         },
         {
-            img: placeholderImageUrl,
-            title: 'Hats'
+            img: "./blonde.png",
+            // title: 'Hats'
         },
         {
-            img: placeholderImageUrl,
-            title: 'Honey'
+            img: "./perksofbeingawallflower.png",
+            // title: 'Honey'
         },
         {
-            img: placeholderImageUrl,
-            title: 'Vegetables'
+            img: "./lookingforalaska.png",
+            // title: 'Vegetables'
         },
         {
-            img: placeholderImageUrl,
-            title: 'Water plant'
+            img: "./practicalmagic.png",
+            // title: 'Water plant'
         }];
 
         const userData = {
