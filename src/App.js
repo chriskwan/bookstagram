@@ -78,7 +78,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-            <AppBar title="Bookstagram"/>
+            <AppBar title="Bookstagram" className="AppBar"/>
             <ButtonBar 
               onChangeToFeed={this.handleChangeToFeed}
               onChangeToDetails={this.handleChangeToDetails}
