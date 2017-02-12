@@ -75,6 +75,7 @@ class ButtonBar extends Component {
                     open={this.state.showStayTunedMessage}
                     message="Coming soon!"
                     onRequestClose={this.handleStayTunedMessageClose}
+                    autoHideDuration={2000}
                 />
             </Paper>
         );
