@@ -52,5 +52,16 @@
     "links": [
         "https://www.amazon.com/Eleanor-Park-Rainbow-Rowell-ebook/dp/B008SAZHLQ"
     ]
+},
+{
+    "image": "./blonde.png",
+    "title": "Blonde",
+    "author": "Joyce Carol Oates",
+    "blurb": "",
+    "description": "",
+    "comments": [],
+    "links": [
+        "https://www.amazon.com/Blonde-Novel-Joyce-Carol-Oates/dp/006093493X"
+    ] 
 }
 ]
