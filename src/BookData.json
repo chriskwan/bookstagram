@@ -96,5 +96,16 @@
     "links": [
         "https://www.amazon.com/dp/B001R11CJO"
     ] 
+},
+{
+    "image": "./belzhar.png",
+    "title": "Belzhar",
+    "author": "Meg Wolitzer",
+    "blurb": "",
+    "description": "",
+    "comments": [],
+    "links": [
+        "https://www.amazon.com/Belzhar-Meg-Wolitzer-ebook/dp/B00INIQQE0/"
+    ] 
 }
 ]
