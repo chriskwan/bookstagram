@@ -73,7 +73,6 @@ class BookTile extends Component {
                 
                 </ListItem>
                 
-                Hey I'm a book with title: { this.props.book.title }!
                 <a href="" onClick={(e) => {
                     e.preventDefault();
                     this.props.onBookClick(e, this.props.book);
