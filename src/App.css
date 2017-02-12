@@ -7,12 +7,10 @@
 }
 
 .UserHeader {
-  background-color: darkgoldenrod;
   text-align: center;
 }
 
 .UserAvatarGroup {
-  background-color: orange;
   float: left;
   text-align: center;
   margin-left: 30px;
@@ -20,7 +18,7 @@
 }
 
 .UserAvatarName {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 25px;
 }
 
@@ -28,7 +26,6 @@
   display: inline-block;
   text-align: center;
   vertical-align: center;
-  background-color: green;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -36,12 +33,10 @@
 .UserInfoGroup {
   display: inline-block;
   text-align: center;
-  background-color: blue;
 }
 
 .UserInfo {
   float: left;
-  background-color: red;
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
