@@ -1,5 +1,20 @@
+.BookDetails {
+  text-align: center;
+}
+
 .BookDetailsImage {
+  margin-top: 15px;
   height: 200px;
+}
+
+.BookDetailsTitle {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.BookDetailsText {
+  font-size: 14px;
 }
 
 .CommentAvatar {

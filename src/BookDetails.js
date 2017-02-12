@@ -4,12 +4,12 @@ class BookDetails extends Component {
     render() {
         const bookData = this.props.book;
         return (
-            <div>
+            <div className="BookDetails">
                 <img className="BookDetailsImage" src={require(bookData.image)} alt="book"/>
-                <div>{bookData.title}</div>
-                <div>{bookData.author}</div>
-                <div>{bookData.blurb}</div>
-                <div>{bookData.description}</div>
+                <p className="BookDetailsTitle">{bookData.title}</p>
+                <p>{bookData.author}</p>
+                <p className="BookDetailsText">{bookData.blurb}</p>
+                <p className="BookDetailsText">{bookData.description}</p>
                 {/*{bookData.comments.map((comment) => {
                     return <p key={comment}>{comment}</p>
                 })}*/}
