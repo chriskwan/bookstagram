@@ -97,7 +97,7 @@ class UserProfile extends Component {
                     <div className="UserAvatarGroup">
                         <div className="UserAvatarName">{userData.name}</div>
                         {/*<Divider inset={false} />*/}
-                        <div><Avatar src={placeholderImage} size={60}/></div>
+                        <div><Avatar src={placeholderImage} size={50}/></div>
                     </div>
 
                     <div className="UserInfoGroupWithButton">
