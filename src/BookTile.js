@@ -55,7 +55,11 @@ class BookTile extends Component {
                     avatar={placeholderImage}
                 />
                 <CardMedia>
-                    <img src={require(this.props.book.image)} className="BookTileImage" alt="Book"/>
+                    <img src={require(this.props.book.image)} className="BookTileImage" alt="Book" onClick={(e) => {
+                            e.preventDefault();
+                            this.props.onBookClick(e, this.props.book);
+                        }}
+                    />
                     <div className="BookTileIconBar">
                         <FavoriteBorder style={iconStyles}/>
                         <LightBulbOutline style={iconStyles} onClick={(e) => {
