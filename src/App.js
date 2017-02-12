@@ -12,6 +12,8 @@ import { AppBar } from 'material-ui';
 
 const bookData = require('./BookData.json');
 
+import appIconImage from './bookstagram_icon.png';
+
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
@@ -78,7 +80,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-            <AppBar title="Bookstagram" className="AppBar"/>
+            <AppBar title="Bookstagram" className="AppBar" iconElementLeft={<img className="AppBarIcon" src={appIconImage}/>}/>
             <ButtonBar 
               onChangeToFeed={this.handleChangeToFeed}
               onChangeToDetails={this.handleChangeToDetails}

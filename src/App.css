@@ -1,7 +1,11 @@
-.AppBar h1{
+.AppBar h1 {
   font-family: 'Shadows Into Light', cursive;
   text-align: center;
   margin-left: -30px;
+}
+
+.AppBarIcon {
+  height: 50px;
 }
 
 .BookTileIconBar {
