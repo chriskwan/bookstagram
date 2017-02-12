@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Avatar from 'material-ui/Avatar';
 import { GridList, GridTile } from 'material-ui/GridList';
 import RaisedButton from 'material-ui/RaisedButton';
+import { Toolbar } from 'material-ui/Toolbar';
+import MenuItem from 'material-ui/MenuItem';
 
 import placeholderImage from './cat_reading.jpg';
 
@@ -84,7 +86,9 @@ class UserProfile extends Component {
 
         return (
             <div>
-                {userData.name}
+                <Toolbar>
+                    <MenuItem primaryText={userData.name} />
+                </Toolbar>
                 
                 <Avatar src={placeholderImage} />
 
