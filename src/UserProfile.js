@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Avatar from 'material-ui/Avatar';
+import Divider from 'material-ui/Divider';
 import { GridList, GridTile } from 'material-ui/GridList';
 import RaisedButton from 'material-ui/RaisedButton';
 import { Toolbar } from 'material-ui/Toolbar';
@@ -68,6 +69,7 @@ class UserProfile extends Component {
 
         const style = {
             margin: 12,
+            display: 'block'
         };
 
         const tiles = tilesData.map((tile) => {
@@ -86,18 +88,27 @@ class UserProfile extends Component {
 
         return (
             <div>
-                <Toolbar>
+                {/*<Toolbar>
                     <MenuItem primaryText={userData.name} />
-                </Toolbar>
-                
-                <Avatar src={placeholderImage} />
+                </Toolbar>*/}
 
-                
-                {userData.numBooks} books
-                {userData.numFollowers} followers
-                {userData.numFollowing} following
+                <div className="UserHeader">
+                    <div className="UserAvatarGroup">
+                        <div className="UserAvatarName">{userData.name}</div>
+                        {/*<Divider inset={false} />*/}
+                        <div><Avatar src={placeholderImage} size={75}/></div>
+                    </div>
 
-                <RaisedButton label="edit profile" style={style}/>
+                    <div className="UserInfoGroupWithButton">
+                        <div className="UserInfoGroup">
+                            <div className="UserInfo"><p className="UserInfoTitle">{userData.numBooks}</p><p>books</p></div>
+                            <div className="UserInfo"><p className="UserInfoTitle">{userData.numFollowers}</p><p>followers</p></div>
+                            <div className="UserInfo"><p className="UserInfoTitle">{userData.numFollowing}</p><p>following</p></div>
+                        </div>
+
+                        <RaisedButton label="edit profile" style={style}/>
+                    </div>
+                </div>
 
                 <div style={styles.root}>
                     <GridList
