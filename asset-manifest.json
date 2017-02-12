@@ -1,10 +1,18 @@
 {
   "main.css": "static/css/main.b56cf947.css",
   "main.css.map": "static/css/main.b56cf947.css.map",
-  "main.js": "static/js/main.5ff5c7b9.js",
-  "main.js.map": "static/js/main.5ff5c7b9.js.map",
+  "main.js": "static/js/main.d500357a.js",
+  "main.js.map": "static/js/main.d500357a.js.map",
+  "static/media/belzhar.png": "static/media/belzhar.71d7f63e.png",
+  "static/media/blonde.png": "static/media/blonde.bf3adc3f.png",
+  "static/media/breadweeatindreams.jpg": "static/media/breadweeatindreams.fc0c52c0.jpg",
   "static/media/cat_reading.jpg": "static/media/cat_reading.18a3d97c.jpg",
+  "static/media/eleanoreandpark.png": "static/media/eleanoreandpark.87efb52a.png",
   "static/media/harrypotter.png": "static/media/harrypotter.78630e02.png",
   "static/media/logo.svg": "static/media/logo.5d5d9eef.svg",
-  "static/media/neverletmego.jpg": "static/media/neverletmego.8205d4ef.jpg"
+  "static/media/lookingforalaska.png": "static/media/lookingforalaska.8e012330.png",
+  "static/media/neverletmego.jpg": "static/media/neverletmego.8205d4ef.jpg",
+  "static/media/perksofbeingawallflower.png": "static/media/perksofbeingawallflower.dd6325ff.png",
+  "static/media/practicalmagic.png": "static/media/practicalmagic.c678a0af.png",
+  "static/media/whiteteeth.png": "static/media/whiteteeth.180f94be.png"
 }
