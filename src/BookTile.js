@@ -51,34 +51,23 @@ class BookTile extends Component {
                 </CardMedia>
                 <CardText>
                     <List>
-                        <Divider inset={true} />
+                        {/*<Divider inset={true} />*/}
                         <ListItem
-                           leftAvatar={ <Avatar src={placeholderImage} /> }
+                           leftAvatar={ <Avatar src={placeholderImage} size={25} /> }
                            rightIconButton={rightIconMenu}
-                           primaryText="Recipe to try"
                            secondaryText={
-                                <p>
-                                <span style={{color: darkBlack}}>Raquel Parrado</span> --
-                                We should eat this: grated squash. Corn and tomatillo tacos.
-                                </p>
+                                <span><span style={{color: darkBlack}}>Jamie: </span>Srsly</span>
                             }
-                            secondaryTextLines={2}
+                            secondaryTextLines={1}
                         />
-
-                        <Divider inset={true} />
+                        {/*<Divider inset={true} />*/}
                         <ListItem
-                            leftAvatar={<Avatar src={placeholderImage} />}
+                            leftAvatar={<Avatar src={placeholderImage} size={25}/>}
                             rightIconButton={rightIconMenu}
-                            primaryText={
-                                <p>Summer BBQ&nbsp;&nbsp;<span style={{color: lightBlack}}>4</span></p>
-                            }
                             secondaryText={
-                                <p>
-                                <span style={{color: darkBlack}}>to me, Scott, Jennifer</span> --
-                                Wish I could come, but I&apos;m out of town this weekend.
-                                </p>
+                                <span><span style={{color: darkBlack}}>Morgan: </span>Yaaaaaas! T_T</span>
                             }
-                            secondaryTextLines={2}
+                            secondaryTextLines={1}
                         />
                     </List>
                 </CardText>
