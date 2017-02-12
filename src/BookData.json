@@ -74,5 +74,17 @@
     "links": [
         "https://www.amazon.com/Perks-Being-Wallflower-Stephen-Chbosky-ebook/dp/B003TSEEDY"
     ] 
+},
+
+{
+    "image": "./lookingforalaska.png",
+    "title": "Looking for Alaska",
+    "author": "John Green",
+    "blurb": "From the beloved author of The Fault in Our Stars and Paper Towns: When Miles heads off to boarding school, he opens his mind and heart to a magnetic girl named Alaska. An unforgettable New York Times bestseller exploring the heartache and beauty of coming of age.",
+    "description": "",
+    "comments": [],
+    "links": [
+        "https://www.amazon.com/Looking-Alaska-John-Green-ebook/dp/B000YI1K0C"
+    ] 
 }
 ]
