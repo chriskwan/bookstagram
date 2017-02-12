@@ -56,7 +56,7 @@ class BookTile extends Component {
                                 leftAvatar={ <Avatar src={placeholderImage} size={25} /> }
                                 rightIconButton={rightIconMenu}
                                 secondaryText={
-                                        <span style={{color: darkBlack}}>{comment}</span>
+                                        <p style={{color: darkBlack}}>{comment}</p>
                                     }
                                     secondaryTextLines={1}
                                 />
