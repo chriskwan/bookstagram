@@ -75,7 +75,6 @@
         "https://www.amazon.com/Perks-Being-Wallflower-Stephen-Chbosky-ebook/dp/B003TSEEDY"
     ] 
 },
-
 {
     "image": "./lookingforalaska.png",
     "title": "Looking for Alaska",
@@ -85,6 +84,17 @@
     "comments": [],
     "links": [
         "https://www.amazon.com/Looking-Alaska-John-Green-ebook/dp/B000YI1K0C"
+    ] 
+},
+{
+    "image": "./practicalmagic.png",
+    "title": "Practical Magic",
+    "author": "Alice Hoffman",
+    "blurb": "",
+    "description": "#fantasy #witches #magic",
+    "comments": [],
+    "links": [
+        "https://www.amazon.com/dp/B001R11CJO"
     ] 
 }
 ]
