@@ -47,7 +47,6 @@ class ButtonBar extends Component {
             <Paper zDepth={1}>
                 <BottomNavigation selectedIndex={this.state.selectedIndex}>
                     <BottomNavigationItem 
-                        label="Discover"
                         icon={discoverIcon}
                         onTouchTap={(e) => {
                             this.selectButton(0);
@@ -55,7 +54,6 @@ class ButtonBar extends Component {
                         }}
                     />
                     <BottomNavigationItem 
-                        label="Post"
                         icon={postIcon}
                         onTouchTap={(e) => {
                             this.selectButton(1);
@@ -63,7 +61,6 @@ class ButtonBar extends Component {
                         }}
                     />
                     <BottomNavigationItem
-                        label="You"
                         icon={profileIcon}
                         onTouchTap={(e) => {
                             this.selectButton(2);
