@@ -10,6 +10,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { AppBar } from 'material-ui';
 
+const bookData = require('./BookData.json');
+
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
@@ -25,7 +27,7 @@ class App extends Component {
     };
 
     this.state = {
-      books: [{ title: "A" }, { title: "B" }, { title: "C" }],
+      books: bookData,
       currentAppState: this.appStates.feed,
       currentBook: null
     }

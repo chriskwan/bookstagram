@@ -16,9 +16,8 @@ import placeholderImage from './cat_reading.jpg';
 class BookTile extends Component {
     render() {
         const tileData = {
-            userName: "Chris",
-            date: new Date(),
-
+            userName: "Ana", //cwkTODO don't hardcode
+            date: (new Date()).toDateString(),
         };
 
         const iconButtonElement = (
@@ -47,28 +46,21 @@ class BookTile extends Component {
                     avatar={placeholderImage}
                 />
                 <CardMedia>
-                    <img src={placeholderImage} className="BookTileImage" alt="Book"/>
+                    <img src={require(this.props.book.image)} className="BookTileImage" alt="Book"/>
                 </CardMedia>
                 <CardText>
                     <List>
-                        {/*<Divider inset={true} />*/}
-                        <ListItem
-                           leftAvatar={ <Avatar src={placeholderImage} size={25} /> }
-                           rightIconButton={rightIconMenu}
-                           secondaryText={
-                                <span><span style={{color: darkBlack}}>Jamie: </span>Srsly</span>
-                            }
-                            secondaryTextLines={1}
-                        />
-                        {/*<Divider inset={true} />*/}
-                        <ListItem
-                            leftAvatar={<Avatar src={placeholderImage} size={25}/>}
-                            rightIconButton={rightIconMenu}
-                            secondaryText={
-                                <span><span style={{color: darkBlack}}>Morgan: </span>Yaaaaaas! T_T</span>
-                            }
-                            secondaryTextLines={1}
-                        />
+                        {this.props.book.comments.map((comment) => {
+                            return <ListItem
+                                key={comment}
+                                leftAvatar={ <Avatar src={placeholderImage} size={25} /> }
+                                rightIconButton={rightIconMenu}
+                                secondaryText={
+                                        <span style={{color: darkBlack}}>{comment}</span>
+                                    }
+                                    secondaryTextLines={1}
+                                />
+                        })}
                     </List>
                 </CardText>
                 <CardActions>
