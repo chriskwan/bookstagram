@@ -11,10 +11,19 @@ import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 
+import FavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
+import LightBulbOutline from 'material-ui/svg-icons/action/lightbulb-outline';
+import ChatBubbleOutline from 'material-ui/svg-icons/communication/chat-bubble-outline';
+
 import placeholderImage from './cat_reading.jpg';
 
 class BookTile extends Component {
     render() {
+        const iconStyles = {
+            marginRight: 24,
+            height: "50px"
+        };
+
         const tileData = {
             userName: "Ana", //cwkTODO don't hardcode
             date: (new Date()).toDateString(),
@@ -47,6 +56,14 @@ class BookTile extends Component {
                 />
                 <CardMedia>
                     <img src={require(this.props.book.image)} className="BookTileImage" alt="Book"/>
+                    <div className="BookTileIconBar">
+                        <FavoriteBorder style={iconStyles}/>
+                        <LightBulbOutline style={iconStyles} onClick={(e) => {
+                            e.preventDefault();
+                            this.props.onBookClick(e, this.props.book);
+                        }}/>
+                        <ChatBubbleOutline style={iconStyles}/>
+                    </div>
                 </CardMedia>
                 <CardText>
                     <List>
@@ -63,12 +80,12 @@ class BookTile extends Component {
                         })}
                     </List>
                 </CardText>
-                <CardActions>
+                {/*<CardActions>
                     <FlatButton label="Learn More" onClick={(e) => {
                         e.preventDefault();
                         this.props.onBookClick(e, this.props.book);
                     }}/>
-                </CardActions>
+                </CardActions>*/}
             </Card>
         );
     }
