@@ -2,9 +2,7 @@
 
 *Don’t judge a book by its cover...*
 
-Bookstagram is a literary community where users can discover books through shared images, quotes, and other media.
-
-"It's like Instagram for books!"
+Bookstagram is a literary community where users can discover books through shared images, quotes, and other media. "It's like Instagram for books!"
 
 Created for the 2017 [CODEX Hackathon](http://codexhackathon.com/)
 
